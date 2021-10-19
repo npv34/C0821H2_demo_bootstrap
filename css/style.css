@@ -1,0 +1,72 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+/*---- CSS MENU ------*/
+.menu {
+    width: 100%;
+    height: 100%;
+}
+
+.list-item-menu {
+    list-style-type: none;
+    float: left;
+    height: 100%;
+    margin: 0;
+}
+.list-item-menu li {
+    float: left;
+    padding: 15px;
+}
+
+.list-item-menu a {
+    text-decoration: none;
+}
+.list-item-menu li:hover {
+    background-color: brown;
+}
+
+.list-item-menu li:hover a {
+    color: white;
+}
+
+    /*---- CSS END MENU ------*/
+
+
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.list-bill {
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.list-bill tr, td {
+    border: 1px solid black;
+}
+
+.list-bill tr {
+    height: 30px;
+}
+
+.list-bill #table-header {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+}

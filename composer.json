@@ -1,0 +1,16 @@
+{
+  "name": "vendor_name/demo_pdo",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "PhanLuan",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "nesbot/carbon": "^2.53",
+    "ext-pdo": "*"
+  }
+}
