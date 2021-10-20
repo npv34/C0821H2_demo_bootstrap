@@ -22,5 +22,9 @@ switch ($page) {
                 break;
         }
         break;
+    case "logout":
+        $loginController = new \Src\Controller\LoginController();
+        $loginController->logout();
+        break;
 
 }

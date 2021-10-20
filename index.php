@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+$loginStatus = $_SESSION['isLogin'];
+if (!isset($loginStatus) || !$loginStatus) {
+    header('location: login.php');
+}
+
+
 
 use Src\Models\BillModels;
 
@@ -8,6 +16,8 @@ include_once "src/models/Database.php";
 include_once "src/models/Model.php";
 include_once "src/models/BillModels.php";
 include_once "src/models/ProductModel.php";
+include_once "src/models/UserModel.php";
+include_once "src/controllers/LoginController.php";
 include_once "src/controllers/BillController.php";
 include_once "src/controllers/ProductController.php";
 
@@ -53,7 +63,7 @@ $bills = $bill->getAll();
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="index.php?page=logout">Logout</a>
                         </div>
                     </li>
                     <li class="nav-item">
